@@ -1,5 +1,6 @@
+---
 #
-# Project:: Ansible Role - CHANGEME
+# Project:: Ansible Role - JumpCloud
 #
 # Copyright 2020, Route 1337, LLC, All Rights Reserved.
 #
@@ -9,4 +10,7 @@
 # See LICENSE
 #
 
-# There should be no code here
+# Default settings for the role's variables
+
+jumpcloud:
+  connect_key: "BADKEY"

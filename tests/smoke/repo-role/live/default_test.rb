@@ -1,4 +1,3 @@
----
 #
 # Project:: Ansible Role - JumpCloud
 #
@@ -10,9 +9,4 @@
 # See LICENSE
 #
 
-# This playbook tests the role of this repo
-
-# Run the single role in this repo on all linux systems
-- hosts: kitchen
-  roles:
-    - '/tmp/kitchen/roles'
+# There should be no code here

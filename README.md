@@ -1,4 +1,4 @@
-Ansible Role - CHANGEME
+Ansible Role - JumpCloud
 ==========================
 This repo contains a template for an Ansible role. Be sure to adjust the contents of the following files and then write your tests and role code:
 

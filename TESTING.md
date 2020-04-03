@@ -1,4 +1,4 @@
-Ansible Role - CHANGEME: Testing
+Ansible Role - JumoCloud: Testing
 ===================================
 All Route 1337, LLC Ansible roles are tested via Test Kitchen.
 
@@ -8,6 +8,11 @@ Yes. Normally Test Kitchen is a Chef thing, but we found it to be very useful fo
 We're using Inspec with Test Kitchen to achieve a test environment that we can use not only during role development, but also
 during CI/CD pipelines involving Ansible, and directly against live servers if needed.  
 
+Production secrets required!
+----------------------------
+Due to the way JumpCloud authenticates agent downloads the `jumpcloud.connect_key` variable has to be a functional one.
+You can edit this in the [host_vars file](tests/host_vars/live/localhost.yml) for Kitchen.  
+**DO NOT LET YOUR CONNECT_KEY GET COMMITTED!!**
 
 Setting up the test environment
 -------------------------------

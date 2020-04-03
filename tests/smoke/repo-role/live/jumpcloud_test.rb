@@ -1,5 +1,5 @@
 #
-# Project:: Ansible Role - CHANGEME
+# Project:: Ansible Role - JumpCloud
 #
 # Copyright 2020, Route 1337, LLC, All Rights Reserved.
 #
@@ -11,7 +11,15 @@
 
 # Prereqs tests
 
+if ['ubuntu', 'centos'].include?(os[:name])
+  # Do something
+else
+  # Do nothing
+end
+
 if os[:name] == 'ubuntu'
+  # Do something
+elsif os[:name] == 'centos'
   # Do something
 else
   # Do nothing

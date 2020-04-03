@@ -10,9 +10,7 @@
 # See LICENSE
 #
 
-# This playbook tests the role of this repo
+# A live key needs to be placed here for testing!
 
-# Run the single role in this repo on all linux systems
-- hosts: kitchen
-  roles:
-    - '/tmp/kitchen/roles'
+jumpcloud:
+  connect_key: "BADKEY"

@@ -1,4 +1,4 @@
-Ansible Role - CHANGEME: Changelog
+Ansible Role - JumpCloud: Changelog
 =====================================
 A list of all the changes made to this repo and the role it contains
 

@@ -1,4 +1,4 @@
-Ansible Role - CHANGEME: How To Contribute
+Ansible Role - JumpCloud: How To Contribute
 =============================================
 If you would like to help contribute to this Ansible role you can with a few simple steps.
 

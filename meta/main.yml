@@ -1,6 +1,6 @@
 ---
 #
-# Project:: Ansible Role - CHANGEME
+# Project:: Ansible Role - JumpCloud
 #
 # Copyright 2020, Route 1337, LLC, All Rights Reserved.
 #
@@ -11,9 +11,9 @@
 #
 
 galaxy_info:
-  role_name: "CHANGEME"
+  role_name: "jumpcloud"
   author: "Matthew Ahrenstein"
-  description: "CHANGEME"
+  description: "A very simple Ansible role to install the JumpCloud Agent on Ubuntu and CentOS based systems"
   company: "Route 1337, LLC"
   license: "license (MIT)"
   min_ansible_version: "2.4"
@@ -22,5 +22,12 @@ galaxy_info:
       versions:
         - xenial
         - bionic
+    - name: EL
+      versions:
+        - 7
+        - 8
   galaxy_tags:
-    - CHANGEME
+    - systen
+    - jumpcloud
+    - authentication
+    - idp

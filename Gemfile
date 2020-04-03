@@ -6,4 +6,3 @@ gem "kitchen-ansible"
 gem "kitchen-inspec"
 gem "inspec"
 gem "inspec-bin"
-
