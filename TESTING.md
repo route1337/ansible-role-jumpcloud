@@ -12,6 +12,7 @@ Production secrets required!
 ----------------------------
 Due to the way JumpCloud authenticates agent downloads the `jumpcloud.connect_key` variable has to be a functional one.
 You can edit this in the [host_vars file](tests/host_vars/live/localhost.yml) for Kitchen.  
+It's also recommended you run `kitchen test --destroy=never` to verify things work on the JumpCloud end.  
 **DO NOT LET YOUR CONNECT_KEY GET COMMITTED!!**
 
 Setting up the test environment

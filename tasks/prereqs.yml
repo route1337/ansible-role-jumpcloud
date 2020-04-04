@@ -12,5 +12,17 @@
 
 # Manage prerequisites for this role
 
-- name: CHANGEME
-  command: echo "CHANGEME"
+- name: (Ubuntu) Update apt-cache
+  apt:
+    update_cache: yes
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Verify curl is installed
+  package:
+    name: curl
+    state: present
+
+- name: Check if JumpCloud is already installed
+  stat:
+    path: /opt/jc
+  register: jc_directory

@@ -10,7 +10,36 @@
 # See LICENSE
 #
 
-# Manage prerequisites for this role
+# Install the JumpCloud Agent
 
-- name: CHANGEME
-  command: echo "CHANGEME"
+#- name: Install and deploy the JumpCloud Agent
+#  shell:
+#    cmd: "curl --header 'x-connect-key: {{ jumpcloud.connect_key }}' https://kickstart.jumpcloud.com/Kickstart | sudo bash"
+#    creates: '/opt/jc/jcagent.conf'
+#  when: not jc_directory.stat.exists
+
+- name: Grab the JumpCloud Kickstart script
+  get_url:
+    url: 'https://kickstart.jumpcloud.com/Kickstart'
+    headers:
+      x-connect-key: "{{ jumpcloud.connect_key }}"
+    dest: '/tmp/jcinstall.sh'
+    mode: 0700
+  when: not jc_directory.stat.exists
+
+- name: Install and deploy the JumpCloud Agent
+  command:
+    cmd: '/tmp/jcinstall.sh'
+    creates: '/opt/jc/jcagent.conf'
+  when: not jc_directory.stat.exists
+
+- name: Cleanup install files
+  file:
+    path: '/tmp/jcinstall.sh'
+    state: absent
+
+- name: Verify the JumpCloud Agent is running and enabled
+  service:
+    name: jcagent
+    enabled: true
+    state: started
