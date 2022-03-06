@@ -27,7 +27,7 @@ This role is fully tested via Test Kitchen using **live** inventory data contain
 
 Donate To Support This Ansible Role
 -----------------------------------
-Route 1337, LLC operates entirely on donations. If you find this Ansible role useful, please consider using the GitHub Sponsors button to show your continued support.
+Route 1337 LLC's open source code heavily relies on donations. If you find this Ansible role useful, please consider using the GitHub Sponsors button to show your continued support.
 
 Thank you for your support!
 
