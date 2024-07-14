@@ -4,7 +4,8 @@ This repo contains the JumpCloud (jumpcloud) Ansible role.
 
 DEPRECATION NOTICE
 ------------------
-Route 1337 LLC has ceased use of JumpCloud a long time ago and will now stop maintaining this repo. We welcome anyone that wishes to take it on so we will not archive the repo for now.
+Route 1337 LLC has ceased use of JumpCloud a long time ago and will now stop maintaining this repo.  
+We welcome anyone that wishes to take it on and we can unarchive the repo if you reach out to us.
 
 What this role does
 -------------------
